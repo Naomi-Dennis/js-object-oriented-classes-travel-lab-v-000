@@ -10,6 +10,7 @@ class Driver{
 
 class Route{
   constructor(start, end){
+    this.map = eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
     this.start = start
     this.end = end
   }
