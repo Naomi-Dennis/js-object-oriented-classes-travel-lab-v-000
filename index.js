@@ -9,9 +9,12 @@ class Driver{
 }
 
 class Route{
-  constructor(attributes){
+  constructor(start, end){
     for(const attr in attributes){
       this[attr] = attributes[attr]
     }
+  }
+  blocksTravelled(){
+
   }
 }
