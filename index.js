@@ -11,9 +11,9 @@ class Driver{
 class Route{
   constructor(start, end){
     this.start = start
-    this.end = end 
+    this.end = end
   }
   blocksTravelled(){
-
+    return this.end["vertical"] - this.start["vertical"]
   }
 }
