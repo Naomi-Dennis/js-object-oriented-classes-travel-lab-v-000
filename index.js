@@ -8,7 +8,7 @@ class Driver{
   }
 }
 
-class Routes{
+class Route{
   constructor(attributes){
     for(const attr in attributes){
       this[attr] = attributes[attr]
