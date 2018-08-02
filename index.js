@@ -11,7 +11,7 @@ class Driver{
 class Routes{
   constructor(attributes){
     for(const attr in attributes){
-
+      self[attr] = attributes[attr]
     }
   }
 }
