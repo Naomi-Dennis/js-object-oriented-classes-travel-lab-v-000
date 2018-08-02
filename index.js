@@ -15,6 +15,7 @@ class Route{
     this.end = end
   }
   blocksTravelled(){
-    return this.end["vertical"] - this.start["vertical"]
+    let horTravelled = Math.abs(this.map.indexOf(this.start["horizontal"]) - this.map.indexOf(this.end["horizontal"]))
+    return (this.end["vertical"] - this.start["vertical"]) + horTravelled
   }
 }
