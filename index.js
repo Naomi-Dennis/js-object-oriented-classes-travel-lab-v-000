@@ -19,7 +19,7 @@ class Route{
     return (this.end["vertical"] - this.start["vertical"]) + horTravelled
   }
   estimatedTime(peakHours){
-      let blocks = blocksTravelled
+      let blocks = self.blocksTravelled
       return peakHours ? blocks * 2 : blocks * 3
   }
 }
