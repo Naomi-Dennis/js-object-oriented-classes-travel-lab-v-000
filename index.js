@@ -18,7 +18,7 @@ class Route{
     let horTravelled = Math.abs(this.map.indexOf(this.start["horizontal"]) - this.map.indexOf(this.end["horizontal"]))
     return (this.end["vertical"] - this.start["vertical"]) + horTravelled
   }
-  estimateTime(peakHours){
+  estimatedTime(peakHours){
       let blocks = blocksTravelled
       return peakHours ? blocks * 2 : blocks * 3
   }
