@@ -20,6 +20,6 @@ class Route{
   }
   estimatedTime(peakHours){
       let blocks = this.blocksTravelled()
-      return peakHours ? blocks * 2 : blocks * 3
+      return Math.ceil( peakHours ? blocks / 2 : blocks / 3 ) 
   }
 }
