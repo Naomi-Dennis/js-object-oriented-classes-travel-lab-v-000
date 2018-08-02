@@ -10,9 +10,8 @@ class Driver{
 
 class Route{
   constructor(start, end){
-    for(const attr in attributes){
-      this[attr] = attributes[attr]
-    }
+    this.start = start
+    this.end = end 
   }
   blocksTravelled(){
 
